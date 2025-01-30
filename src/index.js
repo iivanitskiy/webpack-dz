@@ -17,13 +17,13 @@ const buttonContainer = document.createElement('div');
 buttonContainer.className = "buttonContainer";
 
 buttonIds.forEach(id => {
-    const buttonBg = document.createElement('div');
-    buttonBg.className = 'buttonBg';
-    buttonBg.id = id;
-    const button = document.createElement('button');
-    button.className = id;
-    buttonBg.appendChild(button);
-    buttonContainer.appendChild(buttonBg);
+  const buttonBg = document.createElement('div');
+  buttonBg.className = 'buttonBg';
+  buttonBg.id = id;
+  const button = document.createElement('button');
+  button.className = id;
+  buttonBg.appendChild(button);
+  buttonContainer.appendChild(buttonBg);
 });
 
 root.appendChild(buttonContainer);
